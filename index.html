@@ -1,47 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-03</title>
-    <!-- --Daisy CDN--- -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- ---Manrope font---- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- --Font Awesome import--- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <div class="carousel w-full">
-        <div id="item1" class="carousel-item w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
-            class="w-full" />
-        </div>
-        <div id="item2" class="carousel-item w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-            class="w-full" />
-        </div>
-        <div id="item3" class="carousel-item w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-            class="w-full" />
-        </div>
-        <div id="item4" class="carousel-item w-full">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-            class="w-full" />
-        </div>
-      </div>
-      <div class="flex w-full justify-center gap-2 py-2">
-        <a href="#item1" class="btn btn-xs">1</a>
-        <a href="#item2" class="btn btn-xs">2</a>
-        <a href="#item3" class="btn btn-xs">3</a>
-        <a href="#item4" class="btn btn-xs">4</a>
-      </div>
 
+<body class="font-manrope bg-full-body">
+ <header>
+        <nav class="container mx-auto border-2 border-red-800 px-4 py-5">
+            <!-- for mobile -->
+            <div class="sm:hidden flex items-center">
+                Hello
 
-      <div>
+            </div>
 
-        <img src="assets/banner.png" alt="">
-      </div>
+            <!-- ---for desktop---- -->
+
+            <div class="hidden lg:flex lg:justify-between lg:items-center ">
+                <a href="#" class="flex items-center space-x-2">
+                   <img src="assets/icons8-arrow-up-right-24.png" alt="" class="w-8 h-8 bg-primary-bg rounded-full">
+                    <h4 class="text-3xl font-bold tracking-wide">Rinterio</h4>
+                </a>
+
+                <div>
+                    <ul class="flex justify-between items-center gap-8">
+                        <li>
+                            <a href="#" class="text-[#494949]">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-[#737373]">Services</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-[#737373]">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-[#737373]">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-[#737373]">Contact us</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    
+                       <div class="w-10 h-10 bg-white rounded-full flex justify-center items-center border border-border-color">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                       </div>
+                
+                    <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center border border-border-color">
+                        <img width="24" height="24" src="https://img.icons8.com/ios/50/shopping-cart--v1.png" alt="shopping-cart--v1"/>
+                    </div>
+
+                    <button class="py-3 px-5 rounded-3xl bg-button-bg flex items-center gap-2">
+                        <span class="font-bold text-[20px]">Book Consult</span>
+                         <img src="assets/icons8-arrow-up-right-32.png" alt="" class="bg-black rounded-full border-[1.5px] border-white ">
+
+                    </button>
+                </div>
+
+            </div>
+
+        </nav>
+      
+    </header>
+
 </body>
+
 </html>
